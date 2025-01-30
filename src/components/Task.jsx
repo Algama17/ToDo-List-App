@@ -12,14 +12,14 @@ const Task = ({ tarea, borrarTarea, completarTarea, moverTarea, index, totalTare
       <button
         id="moverArriba"
         onClick={() => moverTarea(index, index - 1)}
-        disabled={index === 0} // Deshabilitar si es la primera tarea
+        disabled={index === 0}
       >
         ↑
       </button>
       <button
         id="moverAbajo"
         onClick={() => moverTarea(index, index + 1)}
-        disabled={index === totalTareas - 1} // Deshabilitar si es la última tarea
+        disabled={index === totalTareas - 1}
       >
         ↓
       </button>
